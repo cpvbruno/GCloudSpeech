@@ -17,8 +17,9 @@ audio = { "content": content }
 encoding = enums.RecognitionConfig.AudioEncoding.LINEAR16
 config = {
   "language_code": args.language,
-  "sample_rate_hertz": 16000,
+  # "sample_rate_hertz": 16000,
   "encoding": encoding,
+  # "audio_channel_count": 2,
 }
 
 response = client.recognize(config, audio)
