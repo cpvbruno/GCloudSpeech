@@ -20,12 +20,15 @@ good automatic speech recognition on a low-end device.
    $ git clone https://github.com/NullEnt1ty/GCloudSpeech
    ```
 
-1. Setup the virtual environment
+2. Setup the virtual environment
 
    ```
    $ ./setup-venv.sh
    ```
-
+3. Setup Google cloud credentials
+   ```
+   gcloud auth application-default login
+   ```
 ## Usage
 
 You can transcribe voice data by piping it to `run.sh`. The transcription will
